@@ -1,5 +1,6 @@
 
 import {Hero} from "./components/Home";
+import { Categories } from "./components/Home";
 import "./App.css";
 
 
@@ -10,6 +11,7 @@ function App() {
       
       <div>
         <Hero></Hero>
+        <Categories></Categories>
       </div>
     </div>
   );
