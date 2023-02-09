@@ -9,10 +9,10 @@ function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <div>
+      
         <Hero></Hero>
         <Categories></Categories>
-      </div>
+      
     </div>
   );
 }

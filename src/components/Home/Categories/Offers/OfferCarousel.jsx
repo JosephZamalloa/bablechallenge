@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card';
 const OfferCarousel = () => {
     return (
-        <div>
+        <div  className=' mt-10'>
             <Card></Card>
         </div>
     );

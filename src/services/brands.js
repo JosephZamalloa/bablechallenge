@@ -1,8 +1,8 @@
-const categoryService={
-    fetchCategory: async()=>{
+const brandService={
+    fetchBrand: async()=>{
         try {
             const request =await fetch(
-                'http://localhost:1337/api/categories?populate=*'
+                'http://localhost:1337/api/brands?populate=*'
             )
             const data=await request.json()
             return data
@@ -12,4 +12,4 @@ const categoryService={
         }
     }
 }
-export default categoryService
+export default brandService

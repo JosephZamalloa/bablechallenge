@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className="fixed flex flex-col top-0 items-center w-full">
       <TopBar></TopBar>
       <div className=" ">
-        <div className="mx-auto  h-24  flex items-center ">
+        <div className="mx-auto  h-24  flex items-center bg-white">
           <img src={menuicon} className="mr-4 lg:w-10 w-10" />
 
           <img src={Logo} className="lg:mr-52 mr-10" />
