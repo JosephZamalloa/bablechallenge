@@ -14,11 +14,9 @@ const TopCateCarousel = () => {
   }, []);
   return (
     <div className="grid grid-flow-row grid-cols-8 gap-44 relative overflow-hidden mt-10">
-      
-        {categories?.map((category, key) => (
-          <Card {...category}></Card>
-        ))}
-      
+      {categories?.map((category, key) => (
+        <Card {...category} key={key}></Card>
+      ))}
     </div>
   );
 };
