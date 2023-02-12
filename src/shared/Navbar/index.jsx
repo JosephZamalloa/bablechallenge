@@ -7,6 +7,7 @@ import User from "../../assets/User.svg";
 import Buy from "../../assets/Buy.svg";
 import Line from "../../assets/Line.svg";
 import TopBar from "./TopBar";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="fixed flex flex-col top-0 items-center w-full">
@@ -15,8 +16,9 @@ const Navbar = () => {
         <div className="mx-auto  h-24  flex items-center bg-white">
           <img src={menuicon} className="mr-4 lg:w-10 w-10" />
 
-          <img src={Logo} className="lg:mr-52 mr-10" />
-
+          <Link to="/" className="hover:cursor-pointer">
+            <img src={Logo} className="lg:mr-52 mr-10" />
+          </Link>
           <div className="relative px-5 lg:flex hidden justify-between bg-sky-50 rounded-3xl  lg:w-full h-12 items-center lg:mr-7 mr-2 ">
             <div>
               <button type="">
@@ -52,10 +54,9 @@ const Navbar = () => {
                 <img src={User} />
               </div>
               <h2 className="xl:flex hidden">Sign Up/Sign In</h2>
-              
             </div>
             <div className="w-5 flex justify-center">
-              <img src={Line} className=""/>
+              <img src={Line} className="" />
             </div>
             <div className="xl:w-44 flex w-10 justify-center xl:justify-start">
               <div>

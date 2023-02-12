@@ -5,9 +5,9 @@ import call from '../../assets/Call.svg'
 const Footer = () => {
   return (
     <div className="w-auto h-[590px] bg-[#008ECC] relative container mx-auto overflow-hidden px-32 py-20">
-      <div className="grid grid-flow-col grid-cols-4">
+      <div className="grid grid-flow-col grid-cols-3 lg:grid-cols-4">
         <div className="text-white flex flex-col gap-10">
-          <h1 className="font-semibold text-4xl">MegaMart</h1>
+          <h1 className="font-semibold  text-xl xl:text-4xl">MegaMart</h1>
           <div className="flex flex-col gap-3">
             <div className="font-bold">Contact Us</div>
             <ul className="text-sm flex flex-col gap-3">
@@ -17,7 +17,7 @@ const Footer = () => {
             </ul>
           </div>
           <h3>Download App</h3>
-          <div className="flex w-36 gap-2">
+          <div className="flex w-20 xl:w-36 gap-2">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
               alt=""
