@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useState,useEffect } from "react";
 import menuicon from "../../assets/Group.svg";
 import Logo from "../../assets/MegaMart.svg";
 import Search from "../../assets/Search.svg";
@@ -8,7 +8,15 @@ import Buy from "../../assets/Buy.svg";
 import Line from "../../assets/Line.svg";
 import TopBar from "./TopBar";
 import { Link } from "react-router-dom";
+import { GlobalContext } from "../../context/GlobalContext";
 const Navbar = () => {
+  const {getContext}=useContext(GlobalContext);
+  const [cartState,setCartState]=useState(0)
+  useEffect(() => {
+    setCartState(getContext())
+    console.log(cartState)
+  }, [cartState])
+  
   return (
     <div className="fixed flex flex-col top-0 items-center w-full">
       <TopBar></TopBar>
@@ -60,6 +68,14 @@ const Navbar = () => {
             </div>
             <div className="xl:w-44 flex w-10 justify-center xl:justify-start">
               <div>
+
+                {cartState!=0?
+                  <div className="rounded-full p-1 bg-red-600  absolute"/>
+                  :<div className="rounded-full p-1 bg-red-600 hidden absolute"/>
+
+                }
+                  
+                
                 <img src={Buy} />
               </div>
               <h2 className="xl:flex hidden">Cart</h2>

@@ -4,9 +4,11 @@ import "./App.css";
 import MainLayout from "./Layout/MainLayout";
 import Home from "./pages/Home";
 import Details from "./pages/Details";
+import { ContextProvider } from "./context/GlobalContext";
 function App() {
   return (
     <div className="App">
+      <ContextProvider>
       <BrowserRouter>
       <MainLayout>
         <Routes>
@@ -17,6 +19,7 @@ function App() {
         </Routes>
         </MainLayout>
       </BrowserRouter>
+      </ContextProvider>
     </div>
   );
 }
